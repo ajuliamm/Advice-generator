@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body{
     display: flex;
@@ -10,20 +11,35 @@ body{
     align-items: center;
     height: 100vh;
     background-color: var(--bkg-body);
+    font-family: 'Manrope', sans-serif;
 
 }
 .container{
-    width:300px ;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width:310px ;
+    padding: 30px;
+    border-radius: 8px;
     background-color:var(--bkg-container);
 
 }
 .advice__titulo{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: .7rem;
+    color: var(--cor-secundaria);
 
 }
 .advice__numero{
+    
 
 }
 .advice__texto{
-
+    color: var(--cor-primaria);
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.2rem;
 }
