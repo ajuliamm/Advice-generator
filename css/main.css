@@ -18,11 +18,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    width:310px ;
+    gap: 20px;
+    width:320px ;
     padding: 30px;
     border-radius: 8px;
     background-color:var(--bkg-container);
+    position: relative;
+    padding-bottom: 50px;
 
 }
 .advice__titulo{
@@ -33,13 +35,50 @@ body{
     color: var(--cor-secundaria);
 
 }
-.advice__numero{
-    
 
-}
 .advice__texto{
     color: var(--cor-primaria);
     font-weight: 800;
     text-align: center;
     font-size: 1.2rem;
+}
+.advice__botao{
+    background-color: var(--cor-secundaria);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+}
+.advice__botao:hover{
+    filter: brightness(120%);
+    box-shadow: 0px 0px 60px 1px var(--cor-secundaria);
+    cursor: pointer;
+}
+.advice__botao:active{
+    opacity: 0.5;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 40px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (min-width:768px){
+    .container{
+        width: 50%;
+    }
+    
+}
+@media (min-width:768px){
+    .container{
+        width: 40%;
+    }
+
 }
