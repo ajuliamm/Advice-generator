@@ -4,20 +4,17 @@ let button = document.getElementById('advice-botao')
 
 var dados 
 
-fetch('https://api.adviceslip.com/advice')
+button.addEventListener('click', ()=>{
+    fetch('https://api.adviceslip.com/advice')
 .then(response=> response.json())
 .then(function(data){
     dados = data
-    console.log(dados.slip)
-
-})
-
-button.addEventListener('click', (callback)=>{
+    console.log(dados)
     Advice.innerHTML = `"${dados.slip.advice}"`
     id.innerHTML = dados.slip.id
-    
-    callback(dados)
 
+})
+ 
 })
 
 
