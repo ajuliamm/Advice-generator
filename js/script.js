@@ -9,11 +9,6 @@ fetch('https://api.adviceslip.com/advice')
 .then(function(data){
     dados = data
     console.log(dados.slip)
-   
-    
-
-})
-.catch(function(){
 
 })
 
