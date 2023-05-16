@@ -12,7 +12,6 @@ Usuários devem ser capazes de::
 - Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo
 - Ver os estados de foco(hover) para todos os elementos interativos na página
 - Gere um novo conselho clicando no ícone de dados
--
 
 
 
